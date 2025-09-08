@@ -18,3 +18,8 @@ hyprctl setcursor cursorname cursorsize
 ```bash
 sh -c "$(curl -sS https://raw.githubusercontent.com/Vendicated/VencordInstaller/main/install.sh)"
 ```
+
+## To mount a ntfs partition (sudo)
+```bash
+mount -o rw -t ntfs-3g /dev/nvmexxxxx ~/Destination/
+```
