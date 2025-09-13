@@ -23,3 +23,8 @@ sh -c "$(curl -sS https://raw.githubusercontent.com/Vendicated/VencordInstaller/
 ```bash
 mount -o rw -t ntfs-3g /dev/nvmexxxxx ~/Destination/
 ```
+
+## To update pacman mirror
+```bash
+sudo reflector --verbose --latest 10 --sort rate  --download-timeout 20 --save /etc/pacman.d/mirrorlist
+```
