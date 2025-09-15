@@ -28,3 +28,8 @@ mount -o rw -t ntfs-3g /dev/nvmexxxxx ~/Destination/
 ```bash
 sudo reflector --verbose --latest 10 --sort rate  --download-timeout 20 --save /etc/pacman.d/mirrorlist
 ```
+
+## Single line command that can run any music video from youtube silently in the background. dependency: yt-dlp, ffplay
+```bash
+yt-dlp -f bestaudio ytsearch:"Let the world burn - Chris Grey" -o - 2>/dev/null | ffplay -nodisp -autoexit -i - &>/dev/null
+```
